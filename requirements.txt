@@ -1,0 +1,4 @@
+git+https://github.com/BonsaiAI/bonsai-python
+websockets
+protobuf
+gym
