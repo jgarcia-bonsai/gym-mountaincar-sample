@@ -1,4 +1,4 @@
-git+https://github.com/BonsaiAI/bonsai-python
-websockets
-protobuf
-gym
+bonsai-python>=0.2.1
+websockets>=3.2
+protobuf>=3.0.0
+gym>=0.3.0
