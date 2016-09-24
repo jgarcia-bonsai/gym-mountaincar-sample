@@ -181,7 +181,7 @@ class GymSimulator(bonsai.Simulator):
         # Step 4: Check if we shousld reset
         self._check_terminal(done)
 
-        # Step 6: Convert thhe observation to an inkling schema.
+        # Step 6: Convert the observation to an inkling schema.
         return self.get_state_schema(current_state)
 
     def open_ai_gym_default_objective(self):
