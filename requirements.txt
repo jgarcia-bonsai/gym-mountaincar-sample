@@ -1,4 +1,2 @@
-bonsai-python>=0.2.1
-websockets>=3.2
-protobuf>=3.0.0
-gym>=0.3.0
+bonsai-python>=0.3.0
+bonsai-gym-common>=0.1.0

@@ -3,7 +3,7 @@ import logging
 import gym
 
 import bonsai
-from gym_common import GymSimulator
+from bonsai_gym_common import GymSimulator
 
 ENVIRONMENT = 'MountainCar-v0'
 RECORD_PATH = None
