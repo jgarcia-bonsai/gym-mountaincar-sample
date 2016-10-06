@@ -1,5 +1,6 @@
 simulator mountaincar_simulator(MountainCarConfig)
-   send schema  (GameState)
+    control (Action)
+    state (GameState)
 end
 
 schema GameState
