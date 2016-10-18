@@ -1,7 +1,3 @@
-simulator mountaincar_simulator(MountainCarConfig)
-   send schema  (GameState)
-end
-
 schema GameState
     Float32 x_position,
     Float32 x_velocity
@@ -15,6 +11,11 @@ schema MountainCarConfig
     Int8 episode_length,
     Int8 num_episodes,
     UInt8 deque_size
+end
+
+simulator mountaincar_simulator(MountainCarConfig)
+    control (Action)
+    state (GameState)
 end
 
 concept high_score is classifier

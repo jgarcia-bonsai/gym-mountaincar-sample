@@ -1,9 +1,7 @@
-import logging
-
 import gym
 
 import bonsai
-from gym_common import GymSimulator
+from bonsai_gym_common import GymSimulator
 
 ENVIRONMENT = 'MountainCar-v0'
 RECORD_PATH = None
@@ -24,7 +22,6 @@ class MountainCarSimulator(GymSimulator):
 
 if __name__ == "__main__":
     env = gym.make(ENVIRONMENT)
-    logging.basicConfig(level=logging.INFO)
     base_args = bonsai.parse_base_arguments()
     simulator = MountainCarSimulator(
         env, SKIPPED_FRAME, RECORD_PATH, not base_args.headless)
