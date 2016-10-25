@@ -4,7 +4,7 @@ schema GameState
 end
 
 schema Action
-    Int8{0, 1, 2} action
+    Int8{0, 1, 2} command
 end
 
 schema MountainCarConfig
@@ -14,7 +14,7 @@ schema MountainCarConfig
 end
 
 simulator mountaincar_simulator(MountainCarConfig)
-    control (Action)
+    action (Action)
     state (GameState)
 end
 

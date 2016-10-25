@@ -11,12 +11,12 @@ SKIPPED_FRAME = 4
 class MountainCarSimulator(GymSimulator):
 
     def __init__(self, env, skip_frame, record_path, render_env):
-        super().__init__(
-            env, skip_frame=skip_frame,
+        GymSimulator.__init__(
+            self, env, skip_frame=skip_frame,
             record_path=record_path, render_env=render_env)
 
     def get_state(self):
-        state_schema = super().get_state()
+        state_schema = GymSimulator.get_state(self)
         return {"x_position": state_schema[0],
                 "x_velocity": state_schema[1]}
 
