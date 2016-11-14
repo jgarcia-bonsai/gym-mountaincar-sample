@@ -16,9 +16,11 @@ class MountainCarSimulator(GymSimulator):
             record_path=record_path, render_env=render_env)
 
     def get_state(self):
-        state_schema = GymSimulator.get_state(self)
-        return {"x_position": state_schema[0],
-                "x_velocity": state_schema[1]}
+        parent_state = GymSimulator.get_state(self)
+        state_dict = {"x_position": parent_state.state[0],
+                      "x_velocity": parent_state.state[1]}
+        return bonsai.simulator.SimState(state_dict, parent_state.is_terminal)
+
 
 if __name__ == "__main__":
     env = gym.make(ENVIRONMENT)
