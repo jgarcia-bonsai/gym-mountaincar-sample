@@ -1,6 +1,5 @@
 websockets>=3.2
 protobuf>=3.0.0
 git+https://github.com/jgarcia-bonsai/gym.git@green-wheels
-bonsai-python>=0.4.0
-bonsai-gym-common>=0.2.0
-
+bonsai-python>=0.6.0
+bonsai-gym-common>=0.4.0
